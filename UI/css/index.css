@@ -1,0 +1,36 @@
+* {
+    margin:0px;
+    padding: 5px;
+}
+.login {
+    width: 30%;
+    margin: 0px auto;
+}
+.login h1 {
+    text-align: center;
+    
+}
+h3 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    background: #3399cc;
+}
+form {
+    padding: 6% 4%;
+    background: #f0f0f0;
+}
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"]{
+    width:100%;
+    margin-bottom: 4%;
+    padding: 3%;
+}
+input[type="submit"] {
+    width: 100%;
+    border: 0px;
+    padding: 4%;
+    margin-bottom: 4%;
+    cursor: pointer;
+    background: #3399cc;
+}
