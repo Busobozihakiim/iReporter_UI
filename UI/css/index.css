@@ -1,6 +1,7 @@
 * {
+    box-sizing: border-box;
     margin:0px;
-    padding: 5px;
+    padding: 0px;
 }
 .login {
     width: 30%;
@@ -8,14 +9,34 @@
 }
 .login h1 {
     text-align: center;
-    
+    margin-top: 5%;
+    margin-bottom: 5%;    
 }
-h3 {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
+ul.tab {
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+    overflow:hidden;
+    border: 1px solid #ccc;
     background: #3399cc;
+}
+
+li a {
+    float: left;
+    width:50%;
+    display: block;
+    border: 1px solid #230303;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    color:black;
+    font-size: 20px;
+}
+li a:hover {
+    background-color: #01a5f7;
+}
+li a:focus, .active {
+    background-color: #01a5f7;
 }
 form {
     padding: 6% 4%;

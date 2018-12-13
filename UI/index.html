@@ -7,8 +7,11 @@
     <body>
         <div class="login">
             <h1>iReporter</h1>
-            <div class="sign_in">
-                <h3>Sign In</h3>
+            <ul class="tab">
+                <li><a href="#" class="tablinks" onclick="openTab(event,'sign_in')">Sign In</a></li>
+                <li><a href="#" class="tablinks" onclick="openTab(event,'sign_up')" style="float: right">Sign Up</a></li>
+            </ul>
+            <div id="sign_in" class="tabcontent">
                 <form action="user.html">
                     <input type="email" placeholder="Email or Username ..">
                     <input type="password" placeholder="Password ..">
@@ -18,8 +21,7 @@
                     </label>    
                 </form>
             </div>
-            <div class="sign_up">
-                <h3>Sign Up</h3>
+            <div id="sign_up" class="tabcontent">
                 <form action="index.html">
                     <input type="text" placeholder="First Name .." required>
                     <input type="text" placeholder="Other Name .." required>
@@ -32,4 +34,21 @@
             </div>
         </div>
     </body>
+    <script>
+        openTab(event, "sign_in")
+            function openTab(active, selectedTab){
+                var forOpenTab = document.getElementsByClassName("tabcontent");
+                for (var i = 0; i < forOpenTab.length; i++){
+                    forOpenTab[i].style.display = "none";
+                }
+                var activeTab = document.getElementsByClassName("tablinks");
+                for (var i = 0; i < forOpenTab.length; i++){
+                    activeTab[i].className = activeTab[i].className.replace("active","")
+                }
+                document.getElementById(selectedTab).style.display = "block";
+                active.currentTarget.className += " active";
+
+            }    
+    </script>
+    
 </html>
