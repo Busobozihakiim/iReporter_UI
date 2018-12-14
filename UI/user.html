@@ -7,22 +7,35 @@
     <body style="background-image: url(images/image_b.jpg);background-size: cover;">
         <header><h1>iReporter</h1></header>
         <ul>
-            <li id="around" class="Dropdown"><a href="#">Menu</a>
-                <div class="dropdown-content" style="left: 0;" >
-                    <a href="#">Report</a>
-                    <a href="#">My Reports</a>
-                    <a href="#">All Reports</a>
-                </div>
-            </li>
-            <li id="gone"><a href="#">Report</a></li>
-            <li id="gone"><a href="#">My Reports</a></li>
-            <li id="gone"><a href="#">All Reports</a></li>
+            <li><a href="#">Report</a></li>
+            <li><a href="#">My Reports</a></li>
             <li id="to-the-right" class="Dropdown"><a href="#">Account</a>
                 <div class="dropdown-content" >
                     <a href="index.html">Logout</a>
                     <a href="#">Admin</a>
                 </div>
             </li>
-        </ul> 
+        </ul>
+        <div id="sign_in" class="tabcontent" style="background:white">            
+            <form action="#">
+                <h1>GRAFT / INCIDENT REPORTING FORM:</h1>
+                <p>
+                Fill in the form below to report Corruption or 
+                incident that has occured in your area and needs government intervention</p>
+                <br>
+                Type<br>
+                <select required>
+                    <option value="Corruption">Corruption</option>
+                    <option value="incident">Incident</option>
+                </select>
+                Description<br>
+                <input type="text" placeholder="Comment .." required>
+                Images<br>
+                <input type="file">
+                Videos<br>
+                <input type="file">
+                <button type="Report">Report</button>
+            </form>
+        </div>  
     </body>
 </html>
