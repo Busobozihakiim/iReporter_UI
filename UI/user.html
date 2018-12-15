@@ -16,26 +16,40 @@
                 </div>
             </li>
         </ul>
-        <div id="sign_in" class="tabcontent" style="background:white">            
-            <form action="#">
-                <h1>GRAFT / INCIDENT REPORTING FORM:</h1>
-                <p>
-                Fill in the form below to report Corruption or 
-                incident that has occured in your area and needs government intervention</p>
-                <br>
-                Type<br>
-                <select required>
-                    <option value="Corruption">Corruption</option>
-                    <option value="incident">Incident</option>
-                </select>
-                Description<br>
-                <input type="text" placeholder="Comment .." required>
-                Images<br>
-                <input type="file">
-                Videos<br>
-                <input type="file">
-                <button type="Report">Report</button>
-            </form>
+        <div id="sign_in" class="tabcontent" style="background:white">
+            <div class="row">
+                <div class="column">
+                    <img src="images/death_by_corruption.jpg" alt="corruption">
+                    <form>
+                    <p id="pr">Do you notice <b>corruption</b> and feel it's effects sting you ? or do you see any incident that needs government intervention .</p>
+                    <p id="pr">Dont feel <b>hopeless</b> when you can actually <b>do something about it</b>.</p>
+                    <p id="pr">With iReporter,you can fix what is wrong by informing the right authorities</p>
+                    <p id="pr">All you do is fill in the report form with the type of incident, a description, 
+                        plus some images or videos and you have done your part.</p>
+                    </form>
+                </div>
+                <div class="column">         
+                    <form action="#">
+                        <h1>GRAFT / INCIDENT REPORTING FORM:</h1>
+                        <p>
+                        Fill in the form below to report Corruption or 
+                        incident that has occured in your area and needs government intervention</p>
+                        <br>
+                        Type<br>
+                        <select required>
+                            <option value="Corruption">Corruption</option>
+                            <option value="incident">Incident</option>
+                        </select>
+                        Description<br>
+                        <input type="text" placeholder="Comment .." required>
+                        Images<br>
+                        <input type="file">
+                        Videos<br>
+                        <input type="file">
+                        <button type="Report">Report</button>
+                    </form>
+                </div>
+            </div>
         </div>  
     </body>
 </html>
