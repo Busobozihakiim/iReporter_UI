@@ -185,3 +185,9 @@ th, td {
     overflow-x: auto;
     background: #ffffff;
 }
+
+@media only screen and (max-width: 320px){
+    li a {        
+        padding: 10px 9px;
+    }
+}
