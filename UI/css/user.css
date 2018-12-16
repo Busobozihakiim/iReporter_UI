@@ -18,7 +18,7 @@ li a {
     padding: 14px 16px;
     display: block;
 }
-li a:hover ,a:active {
+li a:hover, .active {
     display: block;
     background-color: #01a5f7;
 }

@@ -7,8 +7,8 @@
     <body style="background-image: url(images/image_b.jpg);background-size: cover;">
         <header><h1>iReporter</h1></header>
         <ul>
-            <li><a href="#">Report</a></li>
-            <li><a href="#">My Reports</a></li>
+            <li><a href="#" class="tablinks" onclick="openTab(event,'report')">Report</a></li>
+            <li><a href="#" class="tablinks" onclick="openTab(event,'my_reports')">My Reports</a></li>
             <li id="to-the-right" class="Dropdown"><a href="#">Account</a>
                 <div class="dropdown-content" >
                     <a href="index.html">Logout</a>
@@ -16,7 +16,7 @@
                 </div>
             </li>
         </ul>
-        <div id="sign_in" class="tabcontent" style="background:white">
+        <div id="report" class="tabcontent" style="background:white">
             <div class="row">
                 <div class="column">
                     <img src="images/death_by_corruption.jpg" alt="corruption">
@@ -50,6 +50,24 @@
                     </form>
                 </div>
             </div>
-        </div>  
+        </div> 
+        <div id="my_reports" class="tabcontent" style="background-color: white">
+        </div>
     </body>
+    <script>
+        openTab(event, "report");
+            function openTab(active, selectedTab){
+                var forOpenTab = document.getElementsByClassName("tabcontent");
+                for (var i = 0; i < forOpenTab.length; i++){
+                    forOpenTab[i].style.display = "none";
+                }
+                var activeTab = document.getElementsByClassName("tablinks");
+                for (var i = 0; i < forOpenTab.length; i++){
+                    activeTab[i].className = activeTab[i].className.replace("active","")
+                }
+                document.getElementById(selectedTab).style.display = "block";
+                active.currentTarget.className += " active";
+
+            }    
+    </script>
 </html>
